@@ -1,0 +1,31 @@
+@font-face {
+    font-family: modernSansLight;
+    src: url(../fonts/modernSansLight.otf);
+}
+
+* {
+    /* border: 1px solid black; */
+    font-family: modernSansLight;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #d8ab71;
+}
+
+h1 {
+    font-size: 100px;
+    margin: 0;
+}
+
+p {
+    font-size: 25px;
+    text-align: center;
+}
