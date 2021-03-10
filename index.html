@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="se">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="index.js" type="text/javascript"></script>
+        <title>Ekko!</title>
+    </head>
+
+    <body onload="listener()">
+        <!-- COVID-19 INFORMATION -->
+        <div id="announcementBar">
+            <ul id="announcementMessage">Klicka <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank">här</a> för information om COVID-19.</ul>
+            <ul id="close">X</ul>
+        </div>
+
+        <!-- MAIN -->
+        <div id="center">
+            <div>
+                <input id="searchBar" type="text" placeholder="Skriv in din kommun..." autocomplete="off" maxlength="60">
+                <button id="searchBtn" onclick="redirect()">SÖK</button>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <img src="images/contactIcon.png" alt="Kontakt" onclick="window.location.assign('mailto:support@ekko.se')">
+    </body>
+</html>

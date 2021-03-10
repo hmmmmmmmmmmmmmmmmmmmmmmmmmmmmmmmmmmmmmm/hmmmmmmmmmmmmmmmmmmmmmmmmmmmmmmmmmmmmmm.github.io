@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="se">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.home.css">
+        <script src="home.js" type="text/javascript"></script>
+        <title>Ekko!</title>
+    </head>
+
+    <body onload="check()">
+        <!-- TITLE -->
+        <div id="center">
+            <h1 id="header"></h1>
+        </div>
+
+        <div class="container">
+            <!-- LEFT CONTAINER -->
+            <div class="leftContainer">
+                <div id="usualSearches">
+                    <h3>VANLIGA SÖKNINGAR</h3>
+                </div>
+                <div class="leftProduct">
+                    <img src="images/butter.png" alt="Smör">
+                    <p class="inline">Smör, den mest eftersökta produkten på vår hemsida.</p>
+                </div>
+                <br>
+                <div class="leftProduct">
+                    <img src="images/milk.png" alt="Mjölk">
+                    <p class="inline">Mjölk, den näst mest eftersökta produkten på vår hemsida.</p>
+                </div>
+                <br>
+                <div class="leftProduct">
+                    <img src="images/dust.png" alt="Mjöl">
+                    <p class="inline">Vetemjöl, den tredje mest eftersökta produkten på vår hemsida.</p>
+                </div>
+                <br>
+                <div class="leftProduct">
+                    <img src="images/sugar.png" alt="Socker">
+                    <p class="inline">Socker, den fjärde mest eftersökta produkten på vår hemsida.</p>
+                </div>
+                <br>
+                <div class="leftProduct">
+                    <img src="images/flakes.png" alt="Flingor">
+                    <p class="inline">Flingor, den femte mest eftersökta produkten på vår hemsida.</p>
+                </div>
+            </div>
+
+            <!-- CENTER CONTAINER -->
+            <div class="centerContainer container">
+                <div id="centerMiddle">
+                    <div>
+                        <input id="searchBar" type="text" placeholder="Sök efter en vara..." autocomplete="off" maxlength="60">
+                        <button id="searchBtn" onclick="search(document.getElementById('searchBar').value)">SÖK</button>
+                    </div>
+                    <div id="statistics">
+                        <img id="statisticsImage" src="images/questionMark.png" alt="Flingor">
+                        <p id="statisticsContent">
+                            Vara: <b>?</b><br>
+                            Märke: <b>?</b><br>
+                            Ekologiska fotavtryck: <b>?</b><br>
+                            Säljs i: <b>?</b><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT CONTAINER -->
+            <div class="rightContainer container">
+                <h1 id="rightHeader">FAKTA OM &lt;ODENTIFIERAT&gt;</h1>
+                <h3>Mest utsläpp</h3>
+                <p>Vetemjöl</p>
+                <h3>Minst utsläpp</h3>
+                <p>Socker</p>
+                <h3>Ekologiska fotavtryck</h3>
+                <p>16 kg CO<sub>3</sub></p>
+            </div>
+        </div>
+
+    </body>
+</html>
